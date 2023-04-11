@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Noturna",
   "version": "1.0",
   "description": "Noturna: enhances browsing for low vision users with high-contrast black backgrounds & white text/elements for easy navigation.",
@@ -15,5 +15,13 @@
     }
   ],
   "options_page": "options.html",
-  "permissions": ["storage"]
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
 }

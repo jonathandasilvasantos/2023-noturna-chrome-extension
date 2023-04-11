@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Noturna Options</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      select, button {
+        background-color: white;
+        color: black;
+        font-size: 1em;
+        padding: 8px 16px;
+        margin: 8px;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #dddddd;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .donation {
+        margin-top: 20px;
+      }
+
+      .disclaimer {
+        font-size: 0.9em;
+        margin-top: 10px;
+        width: 80%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="logo.png" alt="Noturna Logo" />
+    <h1>Choose your keyboard shortcut:</h1>
+    <select id="shortcut">
+      <option value="KeyI">Ctrl/Cmd + Shift + I</option>
+      <option value="KeyD">Ctrl/Cmd + Shift + D</option>
+      <option value="KeyM">Ctrl/Cmd + Shift + M</option>
+      <!-- Add more pre-defined shortcuts here -->
+    </select>
+    <button id="save">Save</button>
+
+    <div class="donation">
+      <p class="disclaimer">Please consider making a donation to support the authors of this plugin. Your contribution helps us continue to maintain and improve this tool. Thank you!</p>
+      <div class="donation">
+        <a href="https://www.paypal.com/donate/?business=JTC2559KZ8C8U&no_recurring=0&item_name=Support+Noturna+Extension%3A+improve+web+browsing+for+low+vision+users+with+high-contrast+views.+Donate+now%21&currency_code=BRL" target="_blank">
+          <img alt="Donate with PayPal" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" />
+        </a>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
