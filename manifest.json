@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Noturna",
   "version": "1.0",
-  "description": "Noturna is a Chrome Extension that improves web browsing for low vision users by turning HTML backgrounds black and text and foreground elements white, resulting in high-contrast viewing and easier navigation.",
+  "description": "Noturna: enhances browsing for low vision users with high-contrast black backgrounds & white text/elements for easy navigation.",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
