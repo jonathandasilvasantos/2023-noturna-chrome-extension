@@ -1,11 +1,16 @@
+// options.js
+
+// Save settings
 document.getElementById("save").addEventListener("click", function () {
-  var shortcut = document.getElementById("shortcut").value;
-  chrome.storage.sync.set({ shortcut: shortcut }, function () {
-    console.log("Shortcut saved:", shortcut);
+  const showButton = document.getElementById("showButton").checked;
+
+  chrome.storage.sync.set({ showButton }, function () {
+    alert("Settings have been saved successfully.");
   });
 });
 
-chrome.storage.sync.get(["shortcut"], function (result) {
-  document.getElementById("shortcut").value = result.shortcut || "KeyI";
+// Load settings
+chrome.storage.sync.get(["showButton"], function (result) {
+  const showButton = result.showButton || false;
+  document.getElementById("showButton").checked = showButton;
 });
-
